@@ -60,7 +60,12 @@ namespace fullutterance.Controllers
 
             string intentName = (intent != null) ? intent.Name : null;
 
+            // Utterance pass through use this line
             string utterance = request.Intent.Slots["phrase"].Value;
+
+            // Where using Alexa Intent and Slot definitions use this
+            //string utterance = String.Format("{0} {1}", intentName, request.Intent.Slots["<your slot type>"].Value);
+
 
             try
             {
