@@ -8,7 +8,7 @@ You will still need to use the custom slot approach documented here to prevent t
 
 Modified very simply with the Direct Line client for the Microsoft Bot Connector. 
 
-There two approaches to using Direct Line.
+There are two approaches to using Direct Line.
 <li>1) Use the Alexa skill to deliver its utterance as heard to the Bot Framework bot.
 <li>2) Use the Alexa skill to determine intents and custom slot types to match bot framework bot's LUIS intents and entity lists.
 
@@ -18,7 +18,7 @@ With the first option there are serious limitations.
 <li>Alexa session is closed after each interaction. Retaining the session is to be tested.
 <li>This isn't an Amazon recognised technique. I have shared my approach with Amazon and hope they will support it. Collaboration is the way forward to a better world :-)
 
-With the second option you have to duplicate your NLP modal in both LUIS and Alexa. An automated transformation from LUIS to Alexa JSON should be possible - watch this space. 
+With the second option you have to duplicate your NLP model in both LUIS and Alexa. An automated transformation from LUIS to Alexa JSON should be possible - watch this space. 
 
 <b>Build your bot with Microsoft Bot Framework</b>.
  
@@ -128,7 +128,7 @@ string utterance = request.Intent.Slots["phrase"].Value;
 // Where using Alexa Intent and Slot definitions use this
 string utterance = String.Format("{0} {1}", intentName, request.Intent.Slots["<your slot type>"].Value);
 ```
-Multiple slot type handling is left to as a task to do.
+Multiple slot type handling is left as a task to do.
 
 <b>Testing</b>
 
