@@ -1,4 +1,4 @@
-# DirectLineBot2Alexa
+# Alexa2DirectLineBot
 A sample that connects Microsoft Bot Framework to Alexa Skill via the Bot Framework Direct Line connector client.
 
 Based on Stefan Negritoiu (FreeBusy) Alexaskills.net Speechlet project. See License file for details.
